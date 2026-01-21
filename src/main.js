@@ -1,3 +1,23 @@
+// ====== DEPLOYMENT DEBUGGING ======
+console.log('🚀 [DEBUG] main.js loaded at:', new Date().toISOString());
+console.log('🚀 [DEBUG] Document readyState:', document.readyState);
+console.log('🚀 [DEBUG] Location:', window.location.href);
+console.log('🚀 [DEBUG] User Agent:', navigator.userAgent);
+
+// Check if styles loaded
+const styles = document.querySelectorAll('link[rel="stylesheet"]');
+console.log('🚀 [DEBUG] Stylesheets found:', styles.length);
+styles.forEach((s, i) => console.log(`   - Style ${i}:`, s.href));
+
+// Check if key elements exist
+const checkElements = ['header', 'main', '.hero', '.hero-image'];
+checkElements.forEach(sel => {
+  const el = document.querySelector(sel);
+  console.log(`🚀 [DEBUG] Element "${sel}":`, el ? '✅ Found' : '❌ Not found');
+});
+
+console.log('============================');
+
 // Header scroll effect
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
