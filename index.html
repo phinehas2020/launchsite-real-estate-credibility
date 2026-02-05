@@ -1,177 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Arbor & Anchor | Boutique Real Estate Advisory</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="theme-color" content="#090d13" />
+  <title>Velour Estates | High-Conviction Residential Advisory</title>
   <meta name="description"
-    content="Arbor & Anchor is a boutique real estate advisory in Chicago, pairing local intelligence with calm, highly curated representation for buyers and sellers." />
-
+    content="Velour Estates is a private residential advisory for buyers, sellers, and investors who demand precision, discretion, and measurable market advantage." />
+  <meta property="og:title" content="Velour Estates | High-Conviction Residential Advisory" />
+  <meta property="og:description"
+    content="A cinematic, high-performance real estate advisory site built for trust, conversion, and brand authority." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80" />
+  <meta property="og:url" content="https://velourestates.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 
 <body>
-  <header class="site-header" id="header">
-    <div class="container header-inner">
-      <a href="#top" class="logo" aria-label="Arbor and Anchor home">Arbor & Anchor</a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#approach">Approach</a>
-        <a href="#neighborhoods">Neighborhoods</a>
-        <a href="#listings">Listings</a>
-        <a href="#stories">Stories</a>
-        <a href="#contact" class="button button--ghost">Schedule</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <header class="site-header" data-nav>
+    <div class="container nav-shell">
+      <a href="#top" class="brand" aria-label="Velour Estates home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span class="brand-lockup">
+          <span class="brand-name">Velour Estates</span>
+          <span class="brand-sub">Private Residential Advisory</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false"
+        aria-label="Open navigation" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#contact">Contact</a>
       </nav>
+
+      <a class="button button--sm nav-cta" href="#contact">Book Strategy Call</a>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
+  <main id="main-content">
+    <section class="hero section" id="top">
+      <div class="hero-rings" aria-hidden="true"></div>
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Boutique Brokerage · Chicago</p>
-          <h1>Real estate with discretion, patience, and local depth.</h1>
-          <p class="lead">We represent a limited number of clients each season, creating calm clarity around pricing,
-            presentation, and negotiation. The result is a deliberate process that protects your time and maximizes your
-            outcome.</p>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Boutique Team · Chicago + North Shore</p>
+          <h1>
+            Elevating real estate into
+            <span>a strategic advantage.</span>
+          </h1>
+          <p class="lead">We engineer outcomes for discerning buyers, sellers, and investors through positioning,
+            narrative, and negotiation systems built to outperform the market.</p>
           <div class="hero-actions">
-            <a href="#contact" class="button">Schedule a consult</a>
-            <a href="#listings" class="button button--ghost">View listings</a>
+            <a href="#contact" class="button">Start your advisory plan</a>
+            <a href="#portfolio" class="button button--ghost">View private collection</a>
           </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-value">17</span>
-              <span class="stat-label">Years in Chicago</span>
+
+          <dl class="hero-metrics" aria-label="Performance metrics">
+            <div class="metric-card">
+              <dt>Client retention</dt>
+              <dd>94%</dd>
             </div>
-            <div class="stat">
-              <span class="stat-value">430</span>
-              <span class="stat-label">Homes guided</span>
+            <div class="metric-card">
+              <dt>Median list premium</dt>
+              <dd>+11.8%</dd>
             </div>
-            <div class="stat">
-              <span class="stat-value">98%</span>
-              <span class="stat-label">Referral driven</span>
+            <div class="metric-card">
+              <dt>Average days to contract</dt>
+              <dd>18</dd>
             </div>
-          </div>
+          </dl>
         </div>
-        <div class="hero-media">
-          <picture>
+
+        <aside class="hero-showcase reveal" aria-label="Market highlight">
+          <figure class="showcase-image-wrap">
             <img
-              src="https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1400&q=80"
-              srcset="https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=900&q=80 900w,
-                https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1200&q=80 1200w,
-                https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1600&q=80 1600w"
-              sizes="(min-width: 960px) 42vw, 100vw"
-              alt="Sunlit interior with tall windows and neutral finishes" loading="eager" />
-          </picture>
-          <div class="hero-card">
-            <h3>Signature Representation</h3>
-            <p>Concierge-level support for clients who value privacy, precision, and a calm process.</p>
-            <ul class="hero-card-list">
-              <li>Pricing strategy with weekly market review</li>
-              <li>Private-network outreach and qualified previews</li>
-              <li>Offer architecture and negotiation planning</li>
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80"
+              srcset="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80 900w,
+                https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1300&q=80 1300w,
+                https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1700&q=80 1700w"
+              sizes="(min-width: 1024px) 40vw, 100vw" alt="Contemporary multi-story home lit at twilight"
+              loading="eager" fetchpriority="high" />
+            <figcaption>Featured: Astor Ridge Residence · $5.6M</figcaption>
+          </figure>
+
+          <article class="market-card" aria-label="Current market pulse">
+            <p class="eyebrow">Current Market Pulse</p>
+            <h2>Luxury inventory tightened 22% quarter-over-quarter.</h2>
+            <ul>
+              <li>Pre-market inventory increased in Gold Coast and Winnetka.</li>
+              <li>Architectural homes with turnkey finishes are commanding urgency.</li>
+              <li>Strategic launch windows are outperforming broad list timing.</li>
             </ul>
-          </div>
-        </div>
+          </article>
+        </aside>
       </div>
     </section>
 
-    <section id="approach" class="section section--surface">
+    <section class="trust-band" aria-label="Trust indicators">
+      <div class="container trust-shell">
+        <p>Trusted by leaders in luxury development, relocation, and wealth strategy.</p>
+        <ul class="trust-items">
+          <li>Northshore Design Guild</li>
+          <li>Magnolia Private Bank</li>
+          <li>Lakefront Legacy Group</li>
+          <li>Vertex Family Office</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="services">
       <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Our Approach</p>
-          <h2>Quiet luxury, measurable results.</h2>
-          <p>We combine neighborhood intelligence with clear communication to protect your energy and deliver a
-            composed, confident transaction.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Strategic Positioning</h3>
-            <p>We craft a market narrative that aligns architecture, lifestyle, and timing to attract the right buyers.
-            </p>
+        <header class="section-header reveal">
+          <p class="eyebrow">Core Services</p>
+          <h2>White-glove execution, built on measurable systems.</h2>
+          <p>Each engagement is custom-scoped around your objective, timeline, and risk profile.</p>
+        </header>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <h3>Seller Positioning Lab</h3>
+            <p>Brand narrative, media choreography, launch sequencing, and offer architecture designed for premium
+              outcomes.</p>
           </article>
-          <article class="feature-card">
-            <h3>Deep Local Intelligence</h3>
-            <p>Our team tracks block-level trends, school movement, and redevelopment plans to guide every decision.</p>
+          <article class="service-card reveal">
+            <h3>Acquisition Intelligence</h3>
+            <p>Access private inventory, underwriting frameworks, and negotiation strategies before opportunities become
+              public.</p>
           </article>
-          <article class="feature-card">
-            <h3>Curated Client Care</h3>
-            <p>Concierge coordination, vetted vendors, and proactive checklists keep the process quiet and seamless.</p>
+          <article class="service-card reveal">
+            <h3>Capital-Grade Advising</h3>
+            <p>Portfolio-level guidance for families and investors balancing lifestyle decisions with long-term
+              appreciation.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Concierge Transition</h3>
+            <p>From staging and design to legal, tax, and vendor orchestration, every detail is managed under one
+              operating system.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="neighborhoods" class="section">
-      <div class="container split-grid">
-        <div class="split-media">
-          <img
-            src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80"
-            srcset="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=900&q=80 900w,
-              https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80 1200w"
-            sizes="(min-width: 960px) 48vw, 100vw" alt="Chicago neighborhood streetscape" loading="lazy" />
-        </div>
-        <div class="split-content">
-          <p class="eyebrow">Neighborhood Intelligence</p>
-          <h2>North Side classics. West Loop energy. Lakefront calm.</h2>
-          <p>We translate the character of each neighborhood into a lifestyle fit. From walkability to architecture to
-            coffee rituals, we align your priorities with the right streets.</p>
-          <ul class="checklist">
-            <li>Live market walk-throughs and block-by-block notes</li>
-            <li>Private showing access before public listing windows</li>
-            <li>School and lifestyle mapping tailored to your priorities</li>
-          </ul>
-          <a href="#contact" class="text-link">Explore neighborhoods with us</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="listings" class="section section--surface">
+    <section class="section section--contrast" id="portfolio">
       <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Featured Opportunities</p>
-          <h2>Private-market listings and upcoming releases.</h2>
-          <p>We share a curated selection of homes aligned with our clients’ timelines, priorities, and style.</p>
-        </div>
-        <div class="listing-grid">
-          <article class="listing-card">
-            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=900&q=80"
-              alt="Loft living space" loading="lazy" />
-            <div class="listing-body">
-              <span class="listing-tag">Wicker Park</span>
-              <h3>North Damen Loft</h3>
-              <p>Volume ceilings, gallery walls, and a sunset deck overlooking the skyline.</p>
-              <div class="listing-meta">
-                <span>$1.28M</span>
-                <span>3 Bed · 2 Bath</span>
+        <header class="section-header reveal">
+          <p class="eyebrow">Private Collection</p>
+          <h2>Residences selected for architecture, scarcity, and upside.</h2>
+          <p>Not every listing deserves attention. These do.</p>
+        </header>
+
+        <div class="collection-grid">
+          <article class="property-card reveal">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+              alt="Modern coastal mansion with panoramic windows" loading="lazy" decoding="async" />
+            <div class="property-body">
+              <p class="listing-kicker">Lake Forest</p>
+              <h3>North Bluff Glass House</h3>
+              <p>9,200 sq ft of custom steel-and-glass architecture with lake-facing terraces and a private wellness
+                suite.</p>
+              <div class="property-meta">
+                <span>$6.2M</span>
+                <span>6 Bed · 8 Bath</span>
               </div>
             </div>
           </article>
-          <article class="listing-card">
-            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
-              alt="Brick brownstone exterior" loading="lazy" />
-            <div class="listing-body">
-              <span class="listing-tag">Lincoln Park</span>
-              <h3>Clifton Brownstone</h3>
-              <p>Classic facade, curated garden, and a renovated chef’s kitchen.</p>
-              <div class="listing-meta">
-                <span>$2.95M</span>
-                <span>4 Bed · 3.5 Bath</span>
+
+          <article class="property-card reveal">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+              alt="Warm-toned architectural interior with floating staircase" loading="lazy" decoding="async" />
+            <div class="property-body">
+              <p class="listing-kicker">Lincoln Park</p>
+              <h3>Willow Terrace Townhome</h3>
+              <p>Four-story residence balancing sculptural interiors, integrated technology, and private rooftop
+                entertaining.</p>
+              <div class="property-meta">
+                <span>$3.75M</span>
+                <span>4 Bed · 4.5 Bath</span>
               </div>
             </div>
           </article>
-          <article class="listing-card">
-            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80"
-              alt="Modern lakefront living room" loading="lazy" />
-            <div class="listing-body">
-              <span class="listing-tag">Gold Coast</span>
-              <h3>Lakeview Residence</h3>
-              <p>Floor-to-ceiling glass, concierge services, and lakefront views.</p>
-              <div class="listing-meta">
-                <span>$3.4M</span>
-                <span>3 Bed · 3 Bath</span>
+
+          <article class="property-card reveal">
+            <img src="https://images.unsplash.com/photo-1600047509782-20d39509f26d?auto=format&fit=crop&w=1200&q=80"
+              alt="Elegant limestone home exterior with evening lighting" loading="lazy" decoding="async" />
+            <div class="property-body">
+              <p class="listing-kicker">Gold Coast</p>
+              <h3>The Bellevue Manor</h3>
+              <p>Restored limestone estate with museum-grade detailing, automated systems, and a secure private entry
+                court.</p>
+              <div class="property-meta">
+                <span>$8.95M</span>
+                <span>7 Bed · 9 Bath</span>
               </div>
             </div>
           </article>
@@ -179,46 +216,93 @@
       </div>
     </section>
 
-    <section id="stories" class="section">
-      <div class="container">
-        <div class="testimonial">
-          <p class="eyebrow">Client Story</p>
+    <section class="section" id="process">
+      <div class="container process-grid">
+        <header class="process-intro reveal">
+          <p class="eyebrow">Method</p>
+          <h2>A clear system. No chaos. No guesswork.</h2>
+          <p>Our framework removes friction by making every decision objective, timed, and data-aware.</p>
+        </header>
+
+        <ol class="timeline" aria-label="Velour Estates process timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-index">01</span>
+            <div>
+              <h3>Strategic Intake</h3>
+              <p>Define objective, risk tolerance, and non-negotiables. We map constraints before we move.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-index">02</span>
+            <div>
+              <h3>Market Architecture</h3>
+              <p>We build a market model around timing, comparables, and likely counterpart behavior.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-index">03</span>
+            <div>
+              <h3>Execution Window</h3>
+              <p>Campaign launch, private outreach, and negotiation sequencing run on a shared command plan.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-index">04</span>
+            <div>
+              <h3>Close + Continuity</h3>
+              <p>Transaction closes with legal and vendor support, then we hand off a long-term growth roadmap.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="results">
+      <div class="container results-grid">
+        <article class="story-card reveal">
+          <p class="eyebrow">Client Outcome</p>
           <blockquote>
-            “Arbor & Anchor guided us through every decision with calm precision. We never felt rushed, and the final
-            outcome exceeded our expectations.”
+            “Their strategy changed everything. We sold privately in 13 days above projection and closed with zero
+            turbulence. This is what elite advisory should feel like.”
           </blockquote>
-          <p class="testimonial-author">— The Harrison Family, Oak Park</p>
-        </div>
+          <p class="story-author">— Caroline M., Founder & Investor</p>
+        </article>
+
+        <article class="results-card reveal" aria-label="Performance snapshot">
+          <h3>2025 Performance Snapshot</h3>
+          <ul>
+            <li>
+              <span class="result-label">Transaction volume</span>
+              <span class="result-value">$284M</span>
+            </li>
+            <li>
+              <span class="result-label">Repeat + referral business</span>
+              <span class="result-value">91%</span>
+            </li>
+            <li>
+              <span class="result-label">Average negotiation delta</span>
+              <span class="result-value">$174K</span>
+            </li>
+            <li>
+              <span class="result-label">Private-market placements</span>
+              <span class="result-value">46</span>
+            </li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="section section--panel">
-      <div class="container split-grid">
-        <div class="split-media">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
-            alt="Principal advisor portrait" loading="lazy" />
+    <section class="section" id="contact">
+      <div class="container contact-shell reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Private Advisory Intake</p>
+          <h2>Ready to move with conviction?</h2>
+          <p>Tell us your target timeline and property profile. We respond within one business day with a tailored
+            strategy outline.</p>
         </div>
-        <div class="split-content">
-          <p class="eyebrow">Meet the Advisor</p>
-          <h2>Hi, I'm Julian.</h2>
-          <p>I founded Arbor & Anchor to build a calmer, more transparent real estate experience. We take on a curated
-            roster of clients each year so every relationship gets the focus it deserves.</p>
-          <p>My team and I act as advisors well beyond the closing table, offering long-term guidance for buyers,
-            sellers, and investors across Chicago’s most storied neighborhoods.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--surface" id="contact">
-      <div class="container callout">
-        <div>
-          <p class="eyebrow">Start the Conversation</p>
-          <h2>Ready to move with clarity?</h2>
-          <p>We respond within one business day and provide a clear next-step plan tailored to your goals.</p>
-        </div>
-        <div class="callout-actions">
-          <a href="mailto:hello@arboranchor.com" class="button">Email the team</a>
-          <a href="tel:3125550192" class="button button--ghost">Call 312.555.0192</a>
+        <div class="contact-actions">
+          <a class="button" href="mailto:advisory@velourestates.com">Email advisory@velourestates.com</a>
+          <a class="button button--ghost" href="tel:+13125550192">Call (312) 555-0192</a>
         </div>
       </div>
     </section>
@@ -227,22 +311,49 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <div class="footer-logo">Arbor & Anchor</div>
-        <p>1242 N. Greenleaf Ave.<br>Chicago, IL 60614</p>
+        <a href="#top" class="footer-brand">Velour Estates</a>
+        <p>1450 N. Dearborn Pkwy<br />Chicago, IL 60610</p>
       </div>
       <div>
         <h4>Contact</h4>
-        <p>hello@arboranchor.com<br>312.555.0192</p>
+        <p>advisory@velourestates.com<br />(312) 555-0192</p>
       </div>
       <div>
-        <h4>Follow</h4>
-        <p>Instagram<br>LinkedIn</p>
+        <h4>Channels</h4>
+        <p>Instagram · LinkedIn · Private Digest</p>
       </div>
     </div>
     <div class="container footer-note">
-      © 2026 Arbor & Anchor Real Estate. All rights reserved. Equal Housing Opportunity.
+      <p>© <span data-year>2026</span> Velour Estates. All rights reserved. Equal Housing Opportunity.</p>
+      <p>Illinois Brokerage License #475.199102</p>
     </div>
   </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Velour Estates",
+      "url": "https://velourestates.com",
+      "telephone": "+1-312-555-0192",
+      "email": "advisory@velourestates.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1450 N. Dearborn Pkwy",
+        "addressLocality": "Chicago",
+        "addressRegion": "IL",
+        "postalCode": "60610",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Chicago",
+        "Lake Forest",
+        "Winnetka",
+        "North Shore"
+      ]
+    }
+  </script>
 </body>
 
 </html>
