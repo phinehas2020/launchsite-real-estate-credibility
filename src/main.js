@@ -31,6 +31,14 @@ if (menuToggle && header && nav) {
     menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
   });
 
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof Node)) return;
+    if (!header.classList.contains("menu-open")) return;
+    if (header.contains(target)) return;
+    closeMenu();
+  });
+
   nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", closeMenu);
   });
